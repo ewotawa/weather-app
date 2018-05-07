@@ -1,0 +1,125 @@
+<html lang = "en">
+    <head>
+        <title>FCC Weather App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			
+        <!--FontAwesome Stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Weather Stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+        <link rel-"stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+
+        <!-- Internal Stylesheet -->
+        <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
+    </head>
+
+    <body>
+        <!-- Page Title -->
+        <div class="center">
+            <h1>Local Weather</h1>
+        </div>
+
+        <!-- Geo inputs -->
+        <div class="center">
+            <h3>Enter coordinates</h3>
+            <!-- Inputs -->
+            <div class="container">
+                <form>
+                    <input type="text" id="streetAddressInput" placeholder="Street Address">
+                    <input type="text" id="cityInput" placeholder="City">
+                    <input type="text" id="stateInput" placeholder="State">
+                    <input type="text" id="zipInput" placeholder="ZIP Code">
+                </form>
+            </div>
+            <!-- Actions -->
+            <div class="container"> 
+                <!-- id #getButton -->
+                <div id="getButton" class="third">
+                    <button type="button" class="btn btn-primary">Return Weather Data</button>
+                </div>
+                <!-- id #toggleButton -->
+                <div id="toggleButton" class="third">
+                    <button type="button" class="btn btn-primary">Toggle Measurement System</button>
+                </div>
+                <!-- id #refreshPage -->
+                <div id="refreshPage" class="third">
+                    <button type="button" class="btn btn-primary">Refresh Coordinates</button>
+                </div>
+            </div> 
+        </div>
+
+        <!-- Flexbox container -->
+        <div class="container top">
+        
+            <!-- Return Weather Pinpoint Location -->
+            <div class="half">
+                <div id="getLocation"></div>
+            </div>
+
+            <!-- Return Date and Time -->
+            <div class="half">
+                <div id="getDateTime"></div>
+            </div>
+
+            <!-- Return Key Weather Stats -->
+            <div class="full">
+                <div id="getWeatherC" style="display:none"></div>
+                <div id="getWeatherF"></div>
+            </div>
+
+            <!-- Return Sunrise info -->
+            <div class="half">
+                <div id="getSunrise"></div>
+            </div>
+
+            <!-- Return Sunset info -->
+            <div class="half">
+                <div id="getSunset"></div>
+            </div>
+
+            <!-- Return Daily High and Low Temperatures -->
+            <div class="half">
+                <div id="getTempMinC" style="display:none"></div>
+                <div id="getTempMinF"></div>
+            </div>
+            <div class="half">
+                <div id="getTempMaxC" style="display:none"></div>     
+                <div id="getTempMaxF"></div>
+            </div>
+
+            <!-- Return Atmospheric Pressure -->
+            <div class="half"> 
+                <div id="getPressureHPA" style="display:none"></div>
+                <div id="getPressureInHg"></div>
+            </div>
+
+            <!-- Return Humidity -->
+            <div class="half">
+                <div id="getHumidity"></div>
+            </div>
+
+            <!-- Return Wind Speed -->
+            <div class="half">
+                <div id="getWindKph" style="display:none"></div>
+                <div id="getWindMph"></div>
+            </div>
+            <div class="half">
+                <div id="getWindDir"></div>
+            </div>
+
+        </div>
+
+        <!-- Javascript -->
+        <script src="assets/js/javascript.js"></script>
+    </body>
+
+
+
+</html>

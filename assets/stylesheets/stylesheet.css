@@ -1,0 +1,99 @@
+/* weather App stylesheet */
+
+/* font family for weather icons */
+@font-face {
+font-family: "weather-icons";
+src: url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.eot") format("eot"),
+     url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.svg") format("svg"),
+     url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.ttf") format("ttf"),
+     url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff") format("woff"),
+     url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff2") format("woff2");
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.boxShadow {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+
+h1, h3 {
+    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+}
+
+/* viewport width over 350px increase font size */
+
+@media screen and (max-width: 800px) {
+    input, button {
+        margin-top: 20px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .full, .third {
+        width: 90%;
+        margin: 5%;
+    }
+    
+    .half {
+        width: 40%;
+        margin: 5%;
+    }
+
+    .center {
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .top {
+        margin-top: 2.5%;
+    }
+    
+}
+
+
+@media screen and (min-width: 801px) {
+    input {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 35%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    form {
+        margin: auto;
+    }
+
+    .center {
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .full {
+        width: 45%;
+        margin: 2.5%;
+    }
+
+    .half {
+        width: 20%;
+        margin: 2.5%;
+    }
+
+    .third {
+        width: 28%;
+        margin: 2.5%;
+
+    }
+}
+
+/* https://www.w3schools.com/css/css3_shadows.asp */
