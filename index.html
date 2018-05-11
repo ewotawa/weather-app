@@ -30,7 +30,7 @@
         <div class="center">
             <h3>Enter coordinates</h3>
             <!-- Inputs -->
-            <div class="container">
+            <div class="inputContainer">
                 <form>
                     <input type="text" id="streetAddressInput" placeholder="Street Address">
                     <input type="text" id="cityInput" placeholder="City">
@@ -39,18 +39,18 @@
                 </form>
             </div>
             <!-- Actions -->
-            <div class="container"> 
+            <div class="buttonContainer"> 
                 <!-- id #getButton -->
-                <div id="getButton" class="third">
-                    <button type="button" class="btn btn-primary">Return Weather Data</button>
+                <div id="getButton">
+                    <button type="button" class="btn-primary">Return Weather Data</button>
                 </div>
                 <!-- id #toggleButton -->
-                <div id="toggleButton" class="third">
-                    <button type="button" class="btn btn-primary">Toggle Measurement System</button>
+                <div id="toggleButton">
+                    <button type="button" class="btn-primary">Toggle Measurement System</button>
                 </div>
                 <!-- id #refreshPage -->
-                <div id="refreshPage" class="third">
-                    <button type="button" class="btn btn-primary">Refresh Coordinates</button>
+                <div id="refreshPage">
+                    <button type="button" class="btn-primary">Refresh Coordinates</button>
                 </div>
             </div> 
         </div>
@@ -59,59 +59,59 @@
         <div class="container top">
         
             <!-- Return Weather Pinpoint Location -->
-            <div class="half">
-                <div id="getLocation"></div>
+            <div class="small">
+                <p><div id="getLocation"></div></p>
             </div>
 
             <!-- Return Date and Time -->
-            <div class="half">
-                <div id="getDateTime"></div>
+            <div class="small">
+                <p><div id="getDateTime"></div></p>
             </div>
 
             <!-- Return Key Weather Stats -->
-            <div class="full">
-                <div id="getWeatherC" style="display:none"></div>
-                <div id="getWeatherF"></div>
+            <div class="large">
+                <p><div id="getWeatherC" style="display:none"></div></p>
+                <p></p><div id="getWeatherF"></div></p>
             </div>
 
             <!-- Return Sunrise info -->
-            <div class="half">
-                <div id="getSunrise"></div>
+            <div class="small">
+                <p><div id="getSunrise"></div></p>
             </div>
 
             <!-- Return Sunset info -->
-            <div class="half">
-                <div id="getSunset"></div>
+            <div class="small">
+                <p><div id="getSunset"></div></p>
             </div>
 
             <!-- Return Daily High and Low Temperatures -->
-            <div class="half">
-                <div id="getTempMinC" style="display:none"></div>
-                <div id="getTempMinF"></div>
+            <div class="small">
+                <p><div id="getTempMinC" style="display:none"></div></p>
+                <p><div id="getTempMinF"></div></p> 
             </div>
-            <div class="half">
-                <div id="getTempMaxC" style="display:none"></div>     
-                <div id="getTempMaxF"></div>
+            <div class="small">
+                <p><div id="getTempMaxC" style="display:none"></div></p> 
+                <p><div id="getTempMaxF"></div></p>
             </div>
 
             <!-- Return Atmospheric Pressure -->
-            <div class="half"> 
-                <div id="getPressureHPA" style="display:none"></div>
-                <div id="getPressureInHg"></div>
+            <div class="small"> 
+                <p><div id="getPressureHPA" style="display:none"></div></p>
+                <p><div id="getPressureInHg"></div></p>
             </div>
 
             <!-- Return Humidity -->
-            <div class="half">
-                <div id="getHumidity"></div>
+            <div class="small">
+                <p><div id="getHumidity"></div></p>
             </div>
 
             <!-- Return Wind Speed -->
-            <div class="half">
-                <div id="getWindKph" style="display:none"></div>
-                <div id="getWindMph"></div>
+            <div class="small">
+                <p><div id="getWindKph" style="display:none"></div></p>
+                <p><div id="getWindMph"></div></p>
             </div>
-            <div class="half">
-                <div id="getWindDir"></div>
+            <div class="small">
+                <p><div id="getWindDir"></div></p>
             </div>
 
         </div>

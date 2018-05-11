@@ -10,12 +10,27 @@ src: url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathe
      url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff2") format("woff2");
 }
 
-.container {
+.container, .inputContainer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
+.buttonContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+input, button {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .boxShadow {
     text-align: center;
@@ -23,76 +38,63 @@ src: url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathe
     padding: 5px;
 }
 
+.center {
+    margin: auto;
+    text-align: center;
+}
+
 h1, h3 {
     font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
 }
 
-/* viewport width over 350px increase font size */
+.small {
+    width: 40%;
+    margin: 2.5%;
+}
 
-@media screen and (max-width: 800px) {
-    input, button {
-        margin-top: 20px;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+.large {
+    width: 85%;
+    margin: 2.5%;
+}
+
+@media screen and (min-width: 600px) {
+    .inputContainer {
+        max-width: 600px;
     }
     
-    .full, .third {
-        width: 90%;
-        margin: 5%;
+    .buttonContainer {
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
     }
     
-    .half {
+    input {
         width: 40%;
-        margin: 5%;
+        margin-left: 2.4%;
+        margin-right: 2.4%;
     }
 
-    .center {
-        margin: auto;
-        width: 90%;
-        text-align: center;
+    .small {
+        width: 20%;
+        margin: 2.5%;
+        font-size: 1.25em;
+        line-height: 1.5;
     }
-
-    .top {
-        margin-top: 2.5%;
-    }
+    
+    .large {
+        width: 45%;
+        margin: 2.5%;
+        font-size: 1.25em;
+        line-height: 1.5;
+    }    
     
 }
 
-
-@media screen and (min-width: 801px) {
-    input {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 35%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    form {
-        margin: auto;
-    }
-
-    .center {
-        margin: auto;
-        width: 90%;
-        text-align: center;
-    }
-    
-    .full {
-        width: 45%;
-        margin: 2.5%;
-    }
-
-    .half {
-        width: 20%;
-        margin: 2.5%;
-    }
-
-    .third {
-        width: 28%;
-        margin: 2.5%;
-
+@media screen and (min-width: 800px) {
+    .container {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

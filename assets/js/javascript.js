@@ -296,7 +296,7 @@ var weatherIcon = "";
                             $("#getDateTime").html(divOpenShadow + getDateTime + divClose);
 
                             /* weather icon and temperature */
-                            weatherHeader = "<strong>Weather</strong><br>"
+                            weatherHeader = "<strong>Weather</strong>"
                             getWeatherIcon = "<i class=" + "\"" + "wi " + weatherIcon +" aria-hidden=" + "\"" + "true" + "\""  + "></i>";
                             getTempC = Math.round(result.main.temp) + "<i class=" +"\"" + "wi wi-celsius aria=hidden=" + "\"" + "true" + "\"" + "></i>"
                             getTempF = Math.round(9/5 * result.main.temp + 32) + "<i class=" +"\"" + "wi wi-fahrenheit aria=hidden=" + "\"" + "true" + "\"" + "></i>";
